@@ -1,0 +1,254 @@
+/* Font File Integration */
+@font-face {
+    font-family: HelveticaLight;
+    src: url(../fonts/HelveticaLight.ttf);
+}
+@font-face {
+    font-family: HelveticaBold;
+    src: url(../fonts/HelveticaBold.ttf);
+}
+/* Font File Integration */
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	overflow-x: hidden;
+}
+body {
+	background-image: url(../images/bg_imgfull.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+  	-moz-background-size: 100%;
+  	-o-background-size: 100%;
+  	-webkit-background-position: top center;
+  	-moz-background-position: top center;
+  	-o-background-position: top center;
+	background-size: 100%;
+	background-position: top center;
+}
+/* Header Start */
+header {
+	position: relative;
+	min-height: 130px;
+}
+header a img {
+	width: 35%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.navbar-custom {
+	background-color: #51A7D7;
+	height: 80px;
+}
+.nav-link {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff!important;
+	text-decoration: none;
+	transition: .5s ease;
+}
+.nav-link:hover {
+	border-top: 4px solid #8A8A8A;
+	border-bottom: 4px solid #8A8A8A;
+}
+/* Header End */
+/* Banner Start */
+.banner {
+	margin-bottom: 100px;
+}
+.banner img {
+	width: 100%;
+}
+.banner h1 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 55px;
+	color: #51A7D7;
+}
+.banner h5 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 20px;
+	color: #51A7D7;
+}
+.banner h2 {
+	width: 90%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 35px;
+	line-height: 1;
+	margin: 20px 0;
+}
+.banner p {
+	width: 95%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #4F4646;
+}
+.btn-custom {
+	background-color: #1690D5;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 9px;
+	color: #fff!important;
+	padding: 10px 30px;
+	border-radius: 50px;
+	margin-top: 20px;
+	transition: .5s ease;
+}
+.btn-custom:hover {
+	background-color: #8391FF;
+}
+/* Banner End */
+
+/* Intro Section Start */
+.intro {
+	margin-bottom: 75px;
+}
+.intro-content-wrapper {
+	width: 80%;
+	position: relative;
+	text-align: left;
+}
+.intro-shape {
+	position: absolute;
+	top: -50px;
+	left: -80px;
+}
+.intro-shape img {
+	width: 60%;
+}
+.intro h1 {
+	font-family: HelveticaLight;
+	font-size: 45px;
+	color: #555656;
+}
+.intro p {
+	width: 95%;
+	font-family: HelveticaLight;
+	font-size: 13px;
+	color: #555656;
+}
+/* Intro Section End */
+
+/* Service Section Start */
+.content-wrapper {
+	margin-bottom: 40px;
+}
+.content-wrapper img {
+	width: 60%;
+	position: relative;
+}
+.content-wrapper h1 {
+	font-family: HelveticaLight;
+	font-size: 22px;
+	color: #555656;
+}
+.content-wrapper h6 {
+	font-family: HelveticaLight;
+	font-size: 11px;
+	color: #555656;
+}
+.ch-text-wrapper {
+	width: 25%;
+	text-align: right;
+	position: absolute;
+	top: 85px;
+	right: 225px;
+}
+.ks-text-wrapper {
+	width: 24%;
+	text-align: left;
+	position: absolute;
+	top: 65px;
+	left: 225px;
+}
+.ms-text-wrapper {
+	width: 26%;
+	text-align: right;
+	position: absolute;
+	top: 75px;
+	right: 230px;
+}
+.rs-text-wrapper {
+	width: 26%;
+	text-align: left;
+	position: absolute;
+	top: 40px;
+	left: 230px;
+}
+.service p {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+}
+/* Service Section End */
+
+/* Footer Section Start */
+footer {
+	background-image: url(../images/bottom_bg.png);
+	-webkit-background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 20px;
+}
+footer h1 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	color: #fff;
+}
+.form-custom input {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+}
+*::-webkit-input-placeholder {
+    color: #6D6E6A!important;
+}
+*::-moz-placeholder {
+    color: #6D6E6A!important;
+}
+*:-moz-placeholder {
+    color: #6D6E6A!important;
+}
+*:-ms-input-placeholder {
+    color: #6D6E6A!important;
+}
+.menu a {
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	transition: .5s ease;
+}
+.menu a:hover {
+	color: #262626;
+}
+.social a i {
+	font-size: 30px;
+	color: #fff;
+	transition: .5s ease;
+}
+.fa-instagram:hover {
+	color: #262626;
+}
+.fa-twitter:hover {
+	color: #262626;
+}
+/* Footer Section End */
