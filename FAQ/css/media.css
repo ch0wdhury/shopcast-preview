@@ -1,0 +1,321 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+/* Header Part */
+	header {
+		position: relative;
+		min-height: 70px;
+	}
+	header a img {
+		width: 45%;
+		position: absolute;
+		top: 15px;
+		left: -20px;
+		z-index: 1;
+	}
+	.navbar-custom {
+		height: 50px;
+	}
+	.nav-link {
+		font-size: 10px;
+	}
+	.nav-link:hover {
+		border-top: 1px solid #8A8A8A;
+		border-bottom: 1px solid #8A8A8A;
+	}
+/* Header Part */
+
+/* Frequently Asked Questions Start */
+	.faq {
+		margin-bottom: 50px;
+	}
+	.faq h2 {
+		font-size: 12px;
+		text-align: center;
+		color: #43A4DC;
+		margin-bottom: 20px;
+	}
+	.bold-faq {
+		font-size: 25px;
+		padding-right: 5px;
+	}
+	.faq-section {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.question {
+	    cursor: pointer;
+	    width: 100%;
+	    padding: 6px;
+	    border: none;
+	    border-bottom: 1px solid #43A4DC;
+	    text-align: left;
+	    outline: none;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.active, .question:hover {
+	    background: transparent;
+	    border-bottom: 2px solid #43A4DC; 
+	}
+	.question:after {
+	    margin-left: 2px;
+	}
+	.answer {
+		font-size: 10px;
+	    padding: 0 6px;
+	    overflow: hidden;
+	}
+/* Frequently Asked Questions End */
+
+/* Footer Part */
+	footer {
+		padding-bottom: 15px;
+	}
+	footer h1 {
+		font-size: 14px;
+	}
+	.form-custom input {
+		font-size: 10px;
+	}
+	.form-custom textarea {
+		font-size: 10px;
+	}
+	.btn-cust {
+		font-size: 10px;
+	}
+	.menu a {
+		font-size: 8px;
+	}
+	.social a i {
+		font-size: 12px;
+	}
+/* Footer Part */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+/* Header Part */
+	header {
+		position: relative;
+		min-height: 70px;
+	}
+	header a img {
+		width: 35%;
+		position: absolute;
+		top: 0px;
+		left: 30px;
+		z-index: 1;
+	}
+	.navbar-custom {
+		height: 50px;
+	}
+	.nav-link {
+		font-size: 10px;
+	}
+	.nav-link:hover {
+		border-top: 1px solid #8A8A8A;
+		border-bottom: 1px solid #8A8A8A;
+	}
+/* Header Part */
+
+/* Frequently Asked Questions Start */
+	.faq {
+		margin-bottom: 50px;
+	}
+	.faq h2 {
+		font-size: 15px;
+		text-align: center;
+		color: #43A4DC;
+		margin-bottom: 20px;
+	}
+	.bold-faq {
+		font-size: 30px;
+		padding-right: 5px;
+	}
+	.faq-section {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.question {
+	    padding: 8px;
+	    border: none;
+	    border-bottom: 1px solid #43A4DC;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.question:after {
+	    margin-left: 4px;
+	}
+	.answer {
+		font-size: 12px;
+	    padding: 0 8px;
+	    overflow: hidden;
+	}
+/* Frequently Asked Questions End */
+
+/* Footer Part */
+	footer {
+		padding-bottom: 15px;
+	}
+	footer h1 {
+		font-size: 15px;
+	}
+	.form-custom input {
+		font-size: 10px;
+	}
+	.form-custom textarea {
+		font-size: 10px;
+	}
+	.btn-cust {
+		font-size: 10px;
+	}
+	.menu a {
+		font-size: 9px;
+	}
+	.social a i {
+		font-size: 14px;
+	}
+/* Footer Part */
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+/* Header Part */
+	header {
+		position: relative;
+		min-height: 100px;
+	}
+	header a img {
+		width: 35%;
+		position: absolute;
+		top: 0;
+		left: 20px;
+		z-index: 1;
+	}
+	.navbar-custom {
+		height: 60px;
+	}
+	.nav-link {
+		font-size: 13px;
+	}
+	.nav-link:hover {
+	border-top: 3px solid #8A8A8A;
+	border-bottom: 3px solid #8A8A8A;
+	}
+/* Header Part */
+
+/* Frequently Asked Questions Start */
+	.faq {
+		margin-bottom: 70px;
+	}
+	.faq h2 {
+		font-size: 22px;
+		text-align: center;
+		color: #43A4DC;
+		margin-bottom: 20px;
+	}
+	.bold-faq {
+		font-size: 35px;
+		padding-right: 5px;
+	}
+	.question {
+	    padding: 10px;
+	    border: none;
+	    border-bottom: 1px solid #43A4DC;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.question:after {
+	    margin-left: 5px;
+	}
+	.answer {
+		font-size: 14px;
+	    padding: 0 10px;
+	    overflow: hidden;
+	}
+/* Frequently Asked Questions End */
+
+/* Footer Part */
+	footer {
+		padding-bottom: 15px;
+	}
+	footer h1 {
+		font-size: 30px;
+	}
+	.form-custom input {
+		font-size: 14px;
+	}
+	.form-custom textarea {
+		font-size: 14px;
+	}
+	.btn-cust {
+		font-size: 14px;
+	}
+	.menu a {
+		font-size: 12px;
+	}
+	.social a i {
+		font-size: 20px;
+	}
+/* Footer Part */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+/* Header Part */
+	header {
+		position: relative;
+		min-height: 120px;
+		margin-bottom: 30px;
+	}
+	header a img {
+		width: 30%;
+		position: absolute;
+		top: 0;
+		left: 60px;
+		z-index: 1;
+	}
+	.navbar-custom {
+		height: 100px;
+	}
+	.nav-link {
+		font-size: 18px;
+	}
+	.nav-link:hover {
+		border-top: 5px solid #8A8A8A;
+		border-bottom: 5px solid #8A8A8A;
+	}
+/* Header Part */
+
+/* Frequently Asked Questions Start */
+
+/* Frequently Asked Questions End */
+
+/* Footer Part */
+	footer {
+		padding-bottom: 30px;
+	}
+	footer h1 {
+		font-size: 38px;
+	}
+	.form-custom input {
+		font-size: 18px;
+	}
+	.form-custom textarea {
+		font-size: 18px;
+	}
+	.btn-cust {
+		font-size: 18px;
+	}
+	.menu a {
+		font-size: 16px;
+	}
+	.social a i {
+		font-size: 32px;
+	}
+/* Footer Part */
+}
