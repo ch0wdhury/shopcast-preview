@@ -8,6 +8,7 @@
     src: url(../fonts/HelveticaBold.ttf);
 }
 /* Font File Integration */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -186,6 +187,7 @@ header a img {
 	top: 40px;
 	left: 230px;
 }
+
 .service p {
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
@@ -203,19 +205,20 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	padding-top: 50px;
 	padding-bottom: 20px;
-}
-footer h1 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;
-	font-size: 36px;
-	color: #fff;
 }
 .form-custom input {
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: #fff;
+}
+.btn-cust {
+	margin-top: 10px;
+}
+.btn-cust:hover {
+	background-color: #8391FF!important;
 }
 *::-webkit-input-placeholder {
     color: #6D6E6A!important;

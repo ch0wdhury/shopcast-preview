@@ -124,15 +124,19 @@
 /* Footer Part */
 	footer {
 		padding-bottom: 15px;
-	}
-	footer h1 {
-		font-size: 14px;
+		padding-top: 10px;
 	}
 	.form-custom input {
 		font-size: 10px;
 	}
 	.form-custom textarea {
 		font-size: 10px;
+	}
+	.g-recaptcha {
+		transform:scale(0.77);
+		-webkit-transform:scale(0.77);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
 	}
 	.btn-cust {
 		font-size: 10px;
@@ -144,6 +148,96 @@
 		font-size: 12px;
 	}
 /* Footer Part */
+}
+/* Apple devices (landscape phones, 375px and up) */
+@media (min-width: 375px) and (max-width: 413.98px) {
+	/* Service Part */
+	.content-wrapper {
+		margin-bottom: 10px;
+	}
+	.content-wrapper img {
+		width: 60%;
+		position: relative;
+	}
+	.content-wrapper h1 {
+		font-size: 8px;
+	}
+	.content-wrapper h6 {
+		font-size: 4px;
+	}
+	.ch-text-wrapper {
+		width: 23%;
+		position: absolute;
+		top: 29px;
+		right: 95px;
+	}
+	.ks-text-wrapper {
+		width: 24%;
+		position: absolute;
+		top: 20px;
+		left: 95px;
+	}
+	.ms-text-wrapper {
+		width: 27%;
+		position: absolute;
+		top: 25px;
+		right: 95px;
+	}
+	.rs-text-wrapper {
+		width: 24%;
+		position: absolute;
+		top: 15px;
+		left: 95px;
+	}
+	.service p {
+		font-size: 5px;
+	}
+	/* Service Part */
+}
+/* Apple devices (landscape phones, 414px and up) */
+@media (min-width: 414px) and (max-width: 575.98px) {
+	/* Service Part */
+	.content-wrapper {
+		margin-bottom: 10px;
+	}
+	.content-wrapper img {
+		width: 60%;
+		position: relative;
+	}
+	.content-wrapper h1 {
+		font-size: 8px;
+	}
+	.content-wrapper h6 {
+		font-size: 4px;
+	}
+	.ch-text-wrapper {
+		width: 23%;
+		position: absolute;
+		top: 35px;
+		right: 105px;
+	}
+	.ks-text-wrapper {
+		width: 24%;
+		position: absolute;
+		top: 25px;
+		left: 105px;
+	}
+	.ms-text-wrapper {
+		width: 27%;
+		position: absolute;
+		top: 30px;
+		right: 105px;
+	}
+	.rs-text-wrapper {
+		width: 24%;
+		position: absolute;
+		top: 20px;
+		left: 105px;
+	}
+	.service p {
+		font-size: 7px;
+	}
+	/* Service Part */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -273,9 +367,7 @@
 /* Footer Part */
 	footer {
 		padding-bottom: 15px;
-	}
-	footer h1 {
-		font-size: 15px;
+		padding-top: 10px;
 	}
 	.form-custom input {
 		font-size: 10px;
@@ -418,9 +510,7 @@
 /* Footer Part */
 	footer {
 		padding-bottom: 15px;
-	}
-	footer h1 {
-		font-size: 30px;
+		padding-top: 15px;
 	}
 	.form-custom input {
 		font-size: 14px;
@@ -576,9 +666,7 @@
 /* Footer Part */
 	footer {
 		padding-bottom: 30px;
-	}
-	footer h1 {
-		font-size: 38px;
+		padding-top: 20px;
 	}
 	.form-custom input {
 		font-size: 18px;

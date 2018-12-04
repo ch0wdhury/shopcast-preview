@@ -23,13 +23,13 @@
       <nav class="navbar navbar-expand navbar-light navbar-custom">
           <ul class="navbar-nav offset-xl-7 offset-lg-6 offset-md-6 offset-sm-6 offset-4 col-xl-6 col-lg-6 col-md-5 col-sm-8 col-8">
             <li class="nav-item mr-xl-6 mr-lg-5 mr-md-4 mr-sm-3 mr-3">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" id="pricing" href="#fullname">Pricing</a>
             </li>
             <li class="nav-item mr-xl-6 mr-lg-5 mr-md-4 mr-sm-3 mr-3">
-              <a class="nav-link" href="#">Reach Us</a>
+              <a class="nav-link" id="reachus" href="#fullname">Reach Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="FAQ/faq.html">FAQ</a>
             </li>
           </ul>
       </nav>
@@ -132,23 +132,26 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-1 offset-1 mt-xl-5 mt-lg-4 mt-md-3 mt-2 col-xl-5 col-lg-5 col-md-6 col-sm-7 col-7">
-        <h1>Put your <span style="font-weight: normal;">data</span> to work with our <span style="font-weight: normal;">system</span></h1>
-      </div>
-    </div>
-    <div class="row">
       <div class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-1 offset-1 mt-xl-4 mt-lg-3 mt-md-2 mt-sm-1 mt-1 col-xl-9 col-lg-8 col-md-10 col-sm-10 col-10">
-        <form action="#" method="post">
+        <form method="#" method="POST">
           <div class="form-group form-custom">
-            <input type="text" class="form-control text-light bg-transparent" id="fullname" placeholder="Your Name">
+            <input type="text" class="form-control text-light bg-transparent" id="fullname" placeholder="Your Name" name="name">
           </div>
            <div class="form-group form-custom">
-            <input type="email" class="form-control text-light bg-transparent" id="email" placeholder="Your Email Address">
+            <input type="email" class="form-control text-light bg-transparent" id="email" placeholder="Your Email Address" name="email">
+          </div>
+          <div class="form-group form-custom">
+            <input type="text" class="form-control text-light bg-transparent" id="msg-title" placeholder="Anything you would like to know?" name="message">
           </div>
            <div class="form-group form-custom">
-            <textarea class="form-control text-light bg-transparent" id="userdescription" placeholder="Describe Yourself" rows="3"></textarea>
+            <textarea class="form-control text-light bg-transparent" id="message" placeholder="Please type your message here" rows="3" name="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-cust">SUBMIT</button>
+
+          <!-- Captcha Field -->
+          <div id="recaptcha" class="g-recaptcha" data-theme="light" data-sitekey="6LdgVH4UAAAAAGMkIM7BVLG3BoKuuXltNu-4gnCs"></div>
+          <!-- Captcha Field -->
+          
+          <button type="submit" class="btn btn-primary btn-cust">Submit</button>
         </form>
       </div>
     </div>
@@ -156,7 +159,7 @@
           <div class="inline-items menu offset-xl-2 offset-lg-2 offset-md-1 offset-sm-1 offset-1 col-xl-8 col-lg-7 col-md-9 col-sm-8 col-8">
             <a class="col-lg col d-md-inline d-none" href="#">Pricing</a>
             <a class="col-lg col d-sm-inline d-none" href="#">Reach Us</a>
-            <a class="col-lg col d-sm-inline d-none" href="#">FAQ</a>
+            <a class="col-lg col d-sm-inline d-none" href="FAQ/faq.html">FAQ</a>
             <a class="col-lg col" href="#">Terms & Conditions</a>
             <a class="col-lg col" href="#">Privacy</a>
           </div>
@@ -168,6 +171,49 @@
   </div>
 </footer>
   <!-- Footer End -->
+
+  <!-- JQuery Plugins -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/scroll.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+   
+    $("a").on('click', function(event) {
+
+     
+      if (this.hash !== "") {
+        
+        event.preventDefault();
+
+        
+        var hash = this.hash;
+
+        
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+         
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+
+$("#pricing").on('click', function(){
+    $("#msg-title").attr('placeholder', "What's your pricing?");
+});
+
+$("#reachus").on('click', function(){
+    $("#msg-title").attr('placeholder', "I would like to know more about Shopcast");
+});
+
+</script>
+
+  <!-- JQuery Plugins -->
 
   </body>
 </html>
